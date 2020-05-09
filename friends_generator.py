@@ -26,7 +26,9 @@ def select_characters(players_list, friends=FRIENDS):
     num_players = len(players_list)
     num_characters = len(friends)
 
-    char_list_multiplier = int(round((num_players/num_characters), 0)) + 1
+    char_list_multiplier = int(round((num_players/num_characters), 0))
+    if num_players%num_characters:
+        char_list_multiplier += 1
     friends = friends * char_list_multiplier
 
     chosen_char_index = (random.sample(range(0, len(friends)), len(players_list)))
