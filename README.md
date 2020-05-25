@@ -7,5 +7,6 @@ https://psycatgames.com/magazine/party-games/friends-tv-show-drinking-game/
 https://realpython.com/pyinstaller-python/#preparing-your-project
 
 ```
+pyinstaller cli.py --add-data assets/friends3.jpg:assets --onefile -w
 python friends_generator.py --players jane,jack,jill,julian,jeremy,julia --pick_all
 ```
